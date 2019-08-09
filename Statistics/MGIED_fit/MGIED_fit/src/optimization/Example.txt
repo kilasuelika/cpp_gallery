@@ -1,0 +1,16 @@
+#include <iostream>
+#include <Eigen/Core>
+#include "optimize.hpp"
+#include <functional>
+
+double fun1(VectorXd x, void *data) {
+	return exp(x[0] + 3 * x[1] - 0.1) + exp(x[0] - 3 * x[1] - 0.1) + exp(-x[0] - 0.1);
+};
+VectorXd d1(VectorXd x, void* data) {
+	VectorXd grad(2);
+	grad[0] = exp(x[0] + 3 * x[1] - 0.1) + exp(x[0] - 3 * x[1] - 0.1) - exp(-x[0] - 0.1);
+	grad[1] = exp(x[0] + 3 * x[1] - 0.1) * 3 - exp(x[0] - 3 * x[1] - 0.1) * 3;
+	return grad;
+};
+
+SciStaEBD::optimization::Solution s = SciStaEBD::optimization::quasi_newton<void>(fun1, x0, nullptr, d1);

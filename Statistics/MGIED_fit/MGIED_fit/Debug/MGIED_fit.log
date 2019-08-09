@@ -1,0 +1,7 @@
+﻿  MGIED_fit.cpp
+I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\MGIED_fit\simulation.hpp(75,54): warning C4244:  'argument': conversion from 'double' to 'const _Ty', possible loss of data
+I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\MGIED_fit\simulation.hpp(75,54): warning C4244:         with
+I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\MGIED_fit\simulation.hpp(75,54): warning C4244:         [
+I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\MGIED_fit\simulation.hpp(75,54): warning C4244:             _Ty=int
+I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\MGIED_fit\simulation.hpp(75,54): warning C4244:         ]
+  MGIED_fit.vcxproj -> I:\MISC\SAS\cpp_gallery\Statistics\MGIED_fit\Debug\MGIED_fit.exe

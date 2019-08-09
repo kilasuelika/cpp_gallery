@@ -11,7 +11,9 @@ g++-9 libc++=2x
 ## Language
 ### ParameterPack
 1. Combine hash: fold expression and variadic function.
-2. Cast: store double and struct in an array with reinterpret_cast. This method can be used to write an allocator.
+
+### Cast
+store double and struct in an array with `reinterpret_cast`. This method can be used to write an allocator.
 
 ## Math
 ### SteepestDecent
@@ -23,4 +25,4 @@ Usage of filesystem.
 
 ## Algorithm
 ### TreeTraverse
-Given an array $y[i]=j$ which means i's parent is j. First construct a map to store the tree. Then travere it and return path for each leaf.
+Given an array `y[i]=j` which means i's parent is j. First construct a map to store the tree. Then travere it and return path for each leaf.
